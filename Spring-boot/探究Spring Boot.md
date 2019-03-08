@@ -1,7 +1,7 @@
 # 探究Spring Boot
 
-### POM 文件
-#### 1.父项目
+## POM 文件
+##### 1.父项目
 ```xml
 <parent>
     <groupId>org.springframework.boot</groupId>
@@ -23,7 +23,7 @@
 Spring Boot的版本仲裁中心;
 以后我们导入依赖默认是不需要写版本的, (在没有dependencies里面管理的依赖自然要声明版本号)
 
-### 2.起步依赖
+##### 2.起步依赖
 - Spring-boot-starter 场景启动器
 ```xml
 <dependency>
@@ -35,7 +35,7 @@ Spring Boot的版本仲裁中心;
 > - Spring boot 把所有的功能场景都抽取出来,做成一个个starters(启动器), 只需要在项目里面导入这些starters, 所有相关的依赖都会导入进来
 > - 一般需要什么功能就导入什么场景的启动器
 
-### 主程序类,主入口类
+## 主程序类,主入口类
 ```java
 /**
  * SpringBootApplication 来标注一个主程序类, 说明这是一个Spring Boot 应用
@@ -87,14 +87,14 @@ public @interface EnableAutoConfiguration {
 > - 举个例子
 > - ![SpringBootApplication](/image/SpringBootApplication.png)
 
-### Spring Boot 目录结构
+## Spring Boot 目录结构
 ![目录结构](/image/SpringBoot.png)
 - 这里主要说resources文件夹下面的结构
 > - static: 保存所以静态资源, 如js css images等等
 > - templates: 保存所以模板页面, Spring Boot默认jar包使用嵌入式tomcat, 默认不支持JSP页面, 可以使用模板引擎(freemarker, 或者Spring Boot推荐的thymeleaf)
 > - application.properties : Spring Boot 的配置文件, 可以修改一些默认配置
 
-### Spring Boot配置文件
+## Spring Boot配置文件
 #### 1.配置文件
 Spring Boot 使用一个全局的配置文件, 配置文件名是固定的
 - application.properties
